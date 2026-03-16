@@ -1,0 +1,21 @@
+{
+  "name": "email-chain-generator-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for generating business email chains from UPD documents",
+  "main": "src/bot/index.js",
+  "scripts": {
+    "start": "node src/bot/index.js",
+    "validate:thread": "node scripts/validate-thread.js --file thread-sample.txt",
+    "test:regression": "node scripts/run-regressions.js"
+  },
+  "dependencies": {
+    "@mistralai/mistralai": "^1.15.1",
+    "@supabase/supabase-js": "^2.43.4",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.13",
+    "openai": "^4.47.1",
+    "telegraf": "^4.16.3",
+    "uuid": "^9.0.1"
+  }
+}
